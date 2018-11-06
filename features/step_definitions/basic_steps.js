@@ -22,8 +22,7 @@ Then('I fill in {string} with {string}', async function(field, content) {
 });
   
 Then('I should have {int} contact in my address book', async function(int) {
-return 'pending'
-    
+    return 'pending'   
 });
   
 Then('I should not see {string}', async function(string) {
