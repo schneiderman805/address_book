@@ -21,5 +21,6 @@
     "build": "webpack --progress --p --mode=production",
     "watch": "webpack --progress --watch --mode=development",
     "cucumber": "superstatic -p 3000 2> /dev/null & cucumber-js; lsof -ti tcp:3000 | xargs kill"
-  }
+  },
+  "repository": "https://github.com/schneiderman805/address_book.git"
 }
