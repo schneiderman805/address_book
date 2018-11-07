@@ -13,7 +13,7 @@ Then("I should see {string}", async function(content) {
 });
 
 When('I click {string}', async function(string) {
-    return await this.clickOnButton()
+    return await this.clickOnAddContactBtn()
 });
   
 Then('I fill in {string} with {string}', async function(field, content) {
