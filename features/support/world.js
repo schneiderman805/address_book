@@ -25,11 +25,12 @@ class AddressBookWorld {
     expect(actualContent).to.be.eq(expectedContent)
   }
 
-  async clickOnAddContactBtn() {
-    const btnSelector = '.add-contact'
+  async clickOnButton(btnName) {
+    const btnSelector = this.btnSelectorFromName(btnName.toLowerCase())
     await this.page.waitForSelector(btnSelector)
     await this.page.click(btnSelector)
   }
+  
   async fillFormField(field, content){
     const inputSelector = `#contact-${field}`
     await this.page.waitForSelector(inputSelector)
