@@ -35,7 +35,7 @@ const renderContacts = () => {
 
 
 
-const storage = window.localStorage
+
 
 document.addEventListener('DOMContentLoaded', () => {
     renderContacts()
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     addContactForm.addEventListener('submit', event => {
       event.preventDefault()
-      
+      const storage = window.localStorage
   
       const {
         name,
