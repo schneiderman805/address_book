@@ -5,27 +5,28 @@ const renderContacts = () => {
     
     let div = document.querySelector('.contact-list')
     
+    div.innerHTML = ''
     if (contacts) {
-        div.innerHTML = ''
         
-        const ul = document.createElement('ul')
+        const sect = document.createElement('section')
+        sect.classList.add('flex');
+        sect.classList.add('flex-col');
+        sect.classList.add('justify-center');
         contacts.forEach(contact => {
-            let li = document.createElement('li')
-            li.innerHTML = `
-            <div class="card">
-            <div class="content">
+            let sectChild = document.createElement('div')
+            sectChild.innerHTML = `
+            <div class="max-w-sm rounded shadow-lg bg-blue py-3 px-4 mb-3"> 
                 <h3>${ contact.name }</h3>
                 <h3>${ contact.company }</h3>
                 <p>${ contact.notes }</p> 
                 ${ contact.email } | 
               <a href="https://www.twitter.com/${ contact.twitter}">@${contact.twitter}</a>
-            </div>
-          </div>
+           </div>
        `
-        ul.appendChild(li)
+        sect.appendChild(sectChild)
       })
   
-      div.appendChild(ul) 
+      div.appendChild(sect) 
     } else { 
       div.innerHTML = '<p>You have no contacts in your address book</p>' 
     }
