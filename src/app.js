@@ -14,7 +14,6 @@ const renderContacts = () => {
             li.innerHTML = `
             <div class="card">
                 <div class="image">
-                <img src="https://ca-address-book.herokuapp.com/images/pine.jpg" />
             </div>
             <div class="content">
                 <h1>${ contact.name }</h1>
