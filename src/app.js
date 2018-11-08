@@ -13,11 +13,9 @@ const renderContacts = () => {
             let li = document.createElement('li')
             li.innerHTML = `
             <div class="card">
-                <div class="image">
-            </div>
             <div class="content">
-                <h1>${ contact.name }</h1>
-                <h2>${ contact.company }</h2>
+                <h3>${ contact.name }</h3>
+                <h3>${ contact.company }</h3>
                 <p>${ contact.notes }</p> 
                 ${ contact.email } | 
               <a href="https://www.twitter.com/${ contact.twitter}">@${contact.twitter}</a>
