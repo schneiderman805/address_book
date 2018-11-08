@@ -15,7 +15,7 @@ const renderContacts = () => {
         contacts.forEach(contact => {
             let sectChild = document.createElement('div')
             sectChild.innerHTML = `
-            <div class="max-w-sm rounded shadow-lg bg-blue py-3 px-4 mb-3"> 
+            <div class="overflow-y-auto max-w-sm rounded shadow-lg text-white bg-black py-3 px-4 mb-3"> 
                 <h3>${ contact.name }</h3>
                 <h3>${ contact.company }</h3>
                 <p>${ contact.notes }</p> 
