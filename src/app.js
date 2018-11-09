@@ -31,12 +31,8 @@ const renderContacts = () => {
       div.innerHTML = '<p>You have no contacts in your address book</p>' 
     }
   }
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', () => {
+  
+  document.addEventListener('DOMContentLoaded', () => {
     renderContacts()
     
     const addContactForm = document.querySelector('.new-contact-form')
@@ -44,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     addContactForm.addEventListener('submit', event => {
       event.preventDefault()
       const storage = window.localStorage
-  
+      
       const {
         name,
         email,

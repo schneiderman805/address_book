@@ -13,57 +13,55 @@
 <body style="background: url(https://images.unsplash.com/photo-1498230870289-7561110a6e69?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5d966c8669492502408e355ef9584bab&auto=format&fit=crop&w=1500&q=80) ; background-size: 100% 100%;">
   <h1 class="flex justify-center"><i class="fas fa-address-book"></i>  Address book</h1>
   <br>
-    <div class="flex justify-center">
-  <button class="add-contact bg-black hover:bg-grey text-white font-bold py-2 px-4 rounded">Add Contact</button>
-    </div>
-    <br>
-    <form action="#" class= "new-contact-form oweflow-hidden">
-        <div class="flex flex-wrap -mx-3 mb-6 justify-center">
-            <div class="w-full md:w-1/4 px-3 mb-6 md:mb-0 text-black">
-      <label for="name">Name</label>
-      <input class="shadow-lg block w-full text-white border rounded py-3 px-4 mb-3 leading-tight bg-black" id="contact-name" name="name" type="text">
-      
-      <br>
-      <label for="email">Email</label>
-      <input class="shadow-lg block w-full text-white border rounded py-3 px-4 mb-3 leading-tight bg-black" id="contact-email" name="email" type="email">
-      
-      <br>
-      <label for="phone">Phone</label>
-      <input class="shadow-lg block w-full text-white border rounded py-3 px-4 mb-3 leading-tight bg-black" id="contact-phone" name="phone" type="text">
-      
-      <br>
-      <label for="company">Company</label>
-      <input class="shadow-lg block w-full text-white border rounded py-3 px-4 mb-3 leading-tight bg-black" id="contact-company" name="company" type="text">
-      
-      <br>
-      <label for="notes">Notes</label>
-      <textarea class="shadow-lg block w-full text-white border rounded py-3 px-4 mb-3 leading-tight bg-black" id="contact-notes" name="notes" type="text"></textarea>
-      
-      <br>
-      <label for="twitter">Twitter</label>
-      <input class="shadow-lg block w-full text-white border rounded py-3 px-4 mb-3 leading-tight bg-black" id="contact-twitter" name="twitter" type="text">
-      
-      <br>
-      <div class="flex justify-center"> 
-      <button class="save-contact bg-black hover:bg-grey text-white font-bold py-2 px-4 rounded " type="submit">Save Contact</button>
-    </div>
+  
+  <div class="flex justify-center">
+    <button class="add-contact bg-black hover:bg-grey text-white font-bold py-2 px-4 rounded">Add Contact</button>
+  </div>
+  
+  <br>
+  <form action="#" class= "new-contact-form oweflow-hidden">
+    <div class="flex flex-wrap -mx-3 mb-6 justify-center">
+      <div class="w-full md:w-1/4 px-3 mb-6 md:mb-0 text-black">
+        
+        <label for="name">Name</label>
+        <input class="shadow-lg block w-full text-white border rounded py-3 px-4 mb-3 leading-tight bg-black" id="contact-name" name="name" type="text">
+        
+        <br>
+        <label for="email">Email</label>
+        <input class="shadow-lg block w-full text-white border rounded py-3 px-4 mb-3 leading-tight bg-black" id="contact-email" name="email" type="email">
+        
+        <br>
+        <label for="phone">Phone</label>
+        <input class="shadow-lg block w-full text-white border rounded py-3 px-4 mb-3 leading-tight bg-black" id="contact-phone" name="phone" type="text">
+        
+        <br>
+        <label for="company">Company</label>
+        <input class="shadow-lg block w-full text-white border rounded py-3 px-4 mb-3 leading-tight bg-black" id="contact-company" name="company" type="text">
+        
+        <br>
+        <label for="notes">Notes</label>
+        <textarea class="shadow-lg block w-full text-white border rounded py-3 px-4 mb-3 leading-tight bg-black" id="contact-notes" name="notes" type="text"></textarea>
+        
+        <br>
+        <label for="twitter">Twitter</label>
+        <input class="shadow-lg block w-full text-white border rounded py-3 px-4 mb-3 leading-tight bg-black" id="contact-twitter" name="twitter" type="text">
+        
+        <br>
+        <div class="flex justify-center"> 
+          <button class="save-contact bg-black hover:bg-grey text-white font-bold py-2 px-4 rounded " type="submit">Save Contact</button>
+        </div>
       </div>
     </div>
-    </form>
-    
-
+  </form>
+  
   <script src="./dist/bundle.js"></script>
   <div class="flex justify-center">
-      <div class="contact-list-div">
-        <h2 class="flex justify-center bg-white">Contacts</h2>
-        <div class="contact-list">
-      
-      
-          </div>
-        
+    <div class="contact-list-div">
+      <h2 class="flex justify-center bg-white">Contacts</h2>
+      <div class="contact-list"></div>
+    </div>
   </div>
-</div>
-</div>
+
 </body>
 
 </html>
